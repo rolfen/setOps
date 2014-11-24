@@ -1,6 +1,6 @@
 setOps.js
 =========
-Set operations in `setOps.js` take two arrays and return the results as an array. Supported operations are `union`, `intersection`, `difference`, `complement`, and `equals`. `difference` is the _symmetric difference_ and `complement` is the _relative complement_.
+Set operations in `setOps.js` take two arrays and return the result of the operation as an array. Supported operations are `union`, `intersection`, `difference`, `complement`, and `equals`. `difference` is the _symmetric difference_ and `complement` is the _relative complement_.
 
 ## Usage
 
@@ -24,4 +24,25 @@ so.complement(a, b); // => [1]
 // Set equality. A = B
 so.equals(a, b); // => false
 so.equals(a, [1, 2, 3]); // => true
+```
+
+## Using Objects
+
+Arrays of objects can be used in set operations as long as they have some type of unique identifier. The methods `pushUid` and `popUid` work together to set and remove a context for returning an object's identifier.
+
+```javascript
+var so = setOps,
+a = [{id:1}, {id:2}],
+b = [{id:2}, {id:3}];
+
+so.union(a, b); // => [{id:1}, {id:2}, {id:3}]
+
+so.intersection(a, b); // => [{id:2}]
+
+so.difference(a, b); // => [{id:1}, {id:3}]
+
+so.complement(a, b); // => [{id:1}]
+
+so.equals(a, b); // => false
+so.equals(a, [{id:1}, {id:2}]); // => true
 ```
