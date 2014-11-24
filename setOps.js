@@ -21,7 +21,7 @@
   };
 
   // Pop the previously pushed uid method off the stack and
-  // assign top of stack to uid. Return the 
+  // assign top of stack to uid. Return the previous method.
   so.popUid = function() {
     var prev;
     uidList.length > 1 && (prev = uidList.pop());
