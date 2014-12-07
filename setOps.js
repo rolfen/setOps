@@ -1,4 +1,3 @@
-// ---------------------------------------------------------------
 // setOps.js MIT License © 2014 James Abney http://github.com/jabney
 // Set operations union, intersection, symmetric difference,
 // relative complement, equals. Set operations are fast.
