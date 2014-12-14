@@ -28,7 +28,7 @@ so.equals(a, [1, 2, 3]); // => true
 
 ## Using Objects
 
-Arrays of objects can be used in set operations as long as they have some type of unique identifier. The methods `pushUid` and `popUid` work together to set and remove a context for returning an object's identifier.
+Arrays of objects can be used in set operations as long as they have some type of unique identifier. If objects have a `toString` method which returns the unique identifier, they can be used as is. If not, a custom uid method can be specified. The methods `pushUid` and `popUid` work together to set and remove a context for returning an object's identifier.
 
 ```javascript
 var so = setOps,
