@@ -58,3 +58,12 @@ so.equals(a, [{id:1}, {id:2}]); // => true
 
 uidMethod = so.popUid();
 ```
+
+## Credits
+
+Credits go to [James Abney](https://github.com/jabney)
+
+Changes on this fork:
+
+ - Moved to Github
+ - Packaged as node module
