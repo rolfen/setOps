@@ -1,0 +1,19 @@
+{
+  "name": "setops",
+  "version": "1.0.0",
+  "description": "setOps.js ========= Set operations in `setOps.js` take two arrays and return the result of the operation as an array. Supported operations are `union`, `intersection`, `difference`, `complement`, and `equals`. `difference` is the _symmetric difference_ and `complement` is the _relative complement_. The set operations are fast, even for large arrays.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolfen/setOps.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rolfen/setOps/issues"
+  },
+  "homepage": "https://github.com/rolfen/setOps#readme"
+}

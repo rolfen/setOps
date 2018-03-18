@@ -66,4 +66,5 @@ Credits go to [James Abney](https://github.com/jabney)
 Changes on this fork:
 
  - Moved to Github
- - Packaged as node module
+ - Made into a node module
+ - Added a few tests
