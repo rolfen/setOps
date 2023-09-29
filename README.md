@@ -1,9 +1,10 @@
 setOps.js
 =========
 
-## Usage
-
 Set operations in `setOps.js` take two arrays and return the result of the operation as an array. Supported operations are `union`, `intersection`, `difference`, `complement`, and `equals`. `difference` is the _symmetric difference_ and `complement` is the _relative complement_. The set operations are fast, even for large arrays.
+
+
+## Usage
 
 ```javascript
 var so = setOps,
