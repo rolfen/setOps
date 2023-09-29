@@ -1,8 +1,9 @@
 setOps.js
 =========
-Set operations in `setOps.js` take two arrays and return the result of the operation as an array. Supported operations are `union`, `intersection`, `difference`, `complement`, and `equals`. `difference` is the _symmetric difference_ and `complement` is the _relative complement_. The set operations are fast, even for large arrays.
 
 ## Usage
+
+Set operations in `setOps.js` take two arrays and return the result of the operation as an array. Supported operations are `union`, `intersection`, `difference`, `complement`, and `equals`. `difference` is the _symmetric difference_ and `complement` is the _relative complement_. The set operations are fast, even for large arrays.
 
 ```javascript
 var so = setOps,
@@ -59,12 +60,15 @@ so.equals(a, [{id:1}, {id:2}]); // => true
 uidMethod = so.popUid();
 ```
 
+## Installing
+
+npm install https://github.com/rolfen/setOps.git
+
+## Testing
+
+npm test
+
 ## Credits
 
-Credits go to [James Abney](https://github.com/jabney)
+[James Abney](https://github.com/jabney)
 
-Changes on this fork:
-
- - Moved to Github
- - Made into a node module
- - Added a few tests
